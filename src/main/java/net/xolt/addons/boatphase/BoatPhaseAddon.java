@@ -2,8 +2,8 @@ package net.xolt.addons.boatphase;
 
 import net.xolt.addons.boatphase.modules.BoatGlitch;
 import net.xolt.addons.boatphase.modules.BoatPhase;
-import minegame159.meteorclient.MeteorAddon;
-import minegame159.meteorclient.systems.modules.Modules;
+import meteordevelopment.meteorclient.addons.MeteorAddon;
+import meteordevelopment.meteorclient.systems.modules.Modules;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

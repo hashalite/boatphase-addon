@@ -1,16 +1,16 @@
 package net.xolt.addons.boatphase.modules;
 
 import meteordevelopment.orbit.EventHandler;
-import minegame159.meteorclient.events.entity.BoatMoveEvent;
-import minegame159.meteorclient.mixininterface.IVec3d;
-import minegame159.meteorclient.settings.BoolSetting;
-import minegame159.meteorclient.settings.DoubleSetting;
-import minegame159.meteorclient.settings.Setting;
-import minegame159.meteorclient.settings.SettingGroup;
-import minegame159.meteorclient.systems.modules.Categories;
-import minegame159.meteorclient.systems.modules.Module;
-import minegame159.meteorclient.systems.modules.Modules;
-import minegame159.meteorclient.utils.player.PlayerUtils;
+import meteordevelopment.meteorclient.events.entity.BoatMoveEvent;
+import meteordevelopment.meteorclient.mixininterface.IVec3d;
+import meteordevelopment.meteorclient.settings.BoolSetting;
+import meteordevelopment.meteorclient.settings.DoubleSetting;
+import meteordevelopment.meteorclient.settings.Setting;
+import meteordevelopment.meteorclient.settings.SettingGroup;
+import meteordevelopment.meteorclient.systems.modules.Categories;
+import meteordevelopment.meteorclient.systems.modules.Module;
+import meteordevelopment.meteorclient.systems.modules.Modules;
+import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.vehicle.BoatEntity;
 import net.minecraft.util.math.Vec3d;
@@ -106,10 +106,10 @@ public class BoatPhase extends Module {
 
         if (boat != null) {
             boat.noClip = true;
-            boat.pushSpeedReduction = 1;
+            //boat.pushSpeedReduction = 1;
 
             if (lockYaw.get()) {
-                boat.yaw = mc.player.yaw;
+                boat.setYaw(mc.player.getYaw());
             }
 
             Vec3d vel;
